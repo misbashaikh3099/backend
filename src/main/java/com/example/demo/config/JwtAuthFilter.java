@@ -23,6 +23,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     private final JwtUtil jwtUtil;
 
+    public JwtAuthFilter() {
+        this.jwtUtil = null;
+    }
+
     @Override
     protected void doFilterInternal(
             HttpServletRequest request,
